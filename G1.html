@@ -1,0 +1,24 @@
+#include <math.h>
+#include <stdio.h>
+#include  <stdlib.h>
+
+    int  main(void) {
+    double deltaX;
+    double deltaY;
+
+    printf("Veuillez saisir la premiere composante d'un vecteur :");
+    scanf("%lf",&deltaX);
+     printf("Veuillez saisir la deuxième composante d'un vecteur:");
+    scanf("%lf",&deltaY);
+
+     double divisor = sqrt( pow( deltaX, 2 ) + pow( deltaY, 2 ) );
+    deltaX /= divisor;
+    deltaY /= divisor;
+    
+    printf( "Le vecteur normalisé est [%5.2lf,%5.2lf]\n", deltaX, deltaY );
+    
+    return EXIT_SUCCESS;
+    
+    }
+
+    
